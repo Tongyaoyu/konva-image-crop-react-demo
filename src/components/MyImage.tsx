@@ -64,7 +64,7 @@ const MyImage: React.FC<MyImageProps> = ({ image, onSelect, transformer, onDoubl
         setLastCrop(imageRef.current.crop());
     }
 
-    const _handleTransform = (e: any) => {
+    const _handleTransform = () => {
         if (!imageRef.current) return;
         imageRef.current.setAttrs({
             scaleX: 1,
